@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.6 on linux)" generated="20181116 19:34:31.545">
+<suite id="s1" name="Main" source="/home/abo/ROBOT/Test/Main.robot">
+<test id="s1-t1" name="Test1">
+<kw name="Print name ${name}" library="test">
+<msg timestamp="20181116 19:34:31.569" level="INFO">atata
+['p3rand0r']</msg>
+<status status="PASS" starttime="20181116 19:34:31.568" endtime="20181116 19:34:31.569"></status>
+</kw>
+<status status="PASS" starttime="20181116 19:34:31.568" endtime="20181116 19:34:31.569" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181116 19:34:31.546" endtime="20181116 19:34:31.569"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
