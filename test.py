@@ -1,5 +1,5 @@
 from robot.api.deco import keyword
-
+import requests 
     
 
     
@@ -9,4 +9,11 @@ def print_name(name):
     new_list = name.split(",")
     print (new_list)
     return new_list
+
+
+    
+@keyword('Make request to ${url} ${id}')
+def make_request(url,id):
+    r = requests.get(url)
+    print (r.text)
     

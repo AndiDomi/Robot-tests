@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keywordspec generated="20181116 19:34:26" type="library" name="test" format="ROBOT">
+<keywordspec generated="20181119 10:52:00" type="library" name="test" format="ROBOT">
 <version></version>
 <scope>global</scope>
 <namedargs>yes</namedargs>
@@ -38,6 +38,13 @@ decorator::
     @keyword
     def func():
         # ...</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Make request to ${url} ${id}">
+<arguments>
+</arguments>
+<doc></doc>
 <tags>
 </tags>
 </kw>

@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.6 on linux)" generated="20181116 19:34:31.545">
-<suite id="s1" name="Main" source="/home/abo/ROBOT/Test/Main.robot">
-<test id="s1-t1" name="Test1">
+<robot generated="20181119 10:52:19.555" generator="Robot 3.0.4 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/abo/ROBOT/Test" id="s1" name="Test">
+<suite source="/home/abo/ROBOT/Test/Main.robot" id="s1-s1" name="Main">
+<test id="s1-s1-t1" name="Test1">
 <kw name="Print name ${name}" library="test">
-<msg timestamp="20181116 19:34:31.569" level="INFO">atata
-['p3rand0r']</msg>
-<status status="PASS" starttime="20181116 19:34:31.568" endtime="20181116 19:34:31.569"></status>
+<msg timestamp="20181119 10:52:19.639" level="INFO">atata
+[u'p3rand0r']</msg>
+<status status="PASS" endtime="20181119 10:52:19.640" starttime="20181119 10:52:19.639"></status>
 </kw>
-<status status="PASS" starttime="20181116 19:34:31.568" endtime="20181116 19:34:31.569" critical="yes"></status>
+<status status="PASS" endtime="20181119 10:52:19.640" critical="yes" starttime="20181119 10:52:19.638"></status>
 </test>
-<status status="PASS" starttime="20181116 19:34:31.546" endtime="20181116 19:34:31.569"></status>
+<test id="s1-s1-t2" name="Test2">
+<kw name="Make request to ${url} ${id}" library="test">
+<status status="PASS" endtime="20181119 10:52:24.727" starttime="20181119 10:52:19.641"></status>
+</kw>
+<status status="PASS" endtime="20181119 10:52:24.727" critical="yes" starttime="20181119 10:52:19.641"></status>
+</test>
+<status status="PASS" endtime="20181119 10:52:24.728" starttime="20181119 10:52:19.598"></status>
+</suite>
+<status status="PASS" endtime="20181119 10:52:24.730" starttime="20181119 10:52:19.574"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Main">Main</stat>
+<stat fail="0" id="s1" name="Test" pass="2">Test</stat>
+<stat fail="0" id="s1-s1" name="Main" pass="2">Test.Main</stat>
 </suite>
 </statistics>
 <errors>
