@@ -3,16 +3,18 @@
 | Library | test.py   
 
 *** Variable ***
-${name}    p3rand0r
+${name}    Read the documentation!
 ${url}     https://webhook.site/6b49f467-104d-46e0-ad47-
 ${id}      c32ece3312ba
+${result}  0
 *** Keyword ***
 
     
 
 *** Test Cases ***
-| Test1
-| | Print name    ${name}
+| Reminder for Andi
+| | Print reminder   ${name}
     
-| Test2
-| | Make request to     ${url}     ${id}
+| Make a request to a page then log the status code and assert if it is sucesseful 
+| | ${result}=    | Make request to     ${url}     ${id}
+| | should be equal as strings | ${result}   |   200

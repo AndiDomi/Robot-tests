@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181119 10:52:19.555" generator="Robot 3.0.4 (Python 2.7.15rc1 on linux2)">
+<robot generated="20181119 11:49:05.134" generator="Robot 3.0.4 (Python 2.7.15rc1 on linux2)">
 <suite source="/home/abo/ROBOT/Test" id="s1" name="Test">
 <suite source="/home/abo/ROBOT/Test/Main.robot" id="s1-s1" name="Main">
-<test id="s1-s1-t1" name="Test1">
-<kw name="Print name ${name}" library="test">
-<msg timestamp="20181119 10:52:19.639" level="INFO">atata
-[u'p3rand0r']</msg>
-<status status="PASS" endtime="20181119 10:52:19.640" starttime="20181119 10:52:19.639"></status>
+<test id="s1-s1-t1" name="Reminder for Andi">
+<kw name="Print reminder ${name}" library="test">
+<msg timestamp="20181119 11:49:05.218" level="INFO">[u'Read the documentation!']</msg>
+<msg timestamp="20181119 11:49:05.218" level="INFO">atata</msg>
+<status status="PASS" endtime="20181119 11:49:05.218" starttime="20181119 11:49:05.217"></status>
 </kw>
-<status status="PASS" endtime="20181119 10:52:19.640" critical="yes" starttime="20181119 10:52:19.638"></status>
+<status status="PASS" endtime="20181119 11:49:05.219" critical="yes" starttime="20181119 11:49:05.216"></status>
 </test>
-<test id="s1-s1-t2" name="Test2">
+<test id="s1-s1-t2" name="Make a request to a page then log the status code and assert if it is sucesseful">
 <kw name="Make request to ${url} ${id}" library="test">
-<status status="PASS" endtime="20181119 10:52:24.727" starttime="20181119 10:52:19.641"></status>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20181119 11:49:05.521" level="INFO">200</msg>
+<msg timestamp="20181119 11:49:05.521" level="INFO">${result} = 200</msg>
+<status status="PASS" endtime="20181119 11:49:05.522" starttime="20181119 11:49:05.220"></status>
 </kw>
-<status status="PASS" endtime="20181119 10:52:24.727" critical="yes" starttime="20181119 10:52:19.641"></status>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>200</arg>
+</arguments>
+<msg timestamp="20181119 11:49:05.523" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20181119 11:49:05.523" starttime="20181119 11:49:05.522"></status>
+</kw>
+<status status="PASS" endtime="20181119 11:49:05.523" critical="yes" starttime="20181119 11:49:05.219"></status>
 </test>
-<status status="PASS" endtime="20181119 10:52:24.728" starttime="20181119 10:52:19.598"></status>
+<status status="PASS" endtime="20181119 11:49:05.524" starttime="20181119 11:49:05.174"></status>
 </suite>
-<status status="PASS" endtime="20181119 10:52:24.730" starttime="20181119 10:52:19.574"></status>
+<status status="PASS" endtime="20181119 11:49:05.526" starttime="20181119 11:49:05.152"></status>
 </suite>
 <statistics>
 <total>
