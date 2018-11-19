@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181119 11:49:05.134" generator="Robot 3.0.4 (Python 2.7.15rc1 on linux2)">
+<robot generated="20181119 15:25:13.592" generator="Robot 3.0.4 (Python 2.7.15rc1 on linux2)">
 <suite source="/home/abo/ROBOT/Test" id="s1" name="Test">
 <suite source="/home/abo/ROBOT/Test/Main.robot" id="s1-s1" name="Main">
 <test id="s1-s1-t1" name="Reminder for Andi">
 <kw name="Print reminder ${name}" library="test">
-<msg timestamp="20181119 11:49:05.218" level="INFO">[u'Read the documentation!']</msg>
-<msg timestamp="20181119 11:49:05.218" level="INFO">atata</msg>
-<status status="PASS" endtime="20181119 11:49:05.218" starttime="20181119 11:49:05.217"></status>
+<msg timestamp="20181119 15:25:13.676" level="INFO">[u'Read the documentation!']</msg>
+<msg timestamp="20181119 15:25:13.676" level="INFO">atata</msg>
+<status status="PASS" endtime="20181119 15:25:13.676" starttime="20181119 15:25:13.675"></status>
 </kw>
-<status status="PASS" endtime="20181119 11:49:05.219" critical="yes" starttime="20181119 11:49:05.216"></status>
+<status status="PASS" endtime="20181119 15:25:13.677" critical="yes" starttime="20181119 15:25:13.674"></status>
 </test>
 <test id="s1-s1-t2" name="Make a request to a page then log the status code and assert if it is sucesseful">
 <kw name="Make request to ${url} ${id}" library="test">
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20181119 11:49:05.521" level="INFO">200</msg>
-<msg timestamp="20181119 11:49:05.521" level="INFO">${result} = 200</msg>
-<status status="PASS" endtime="20181119 11:49:05.522" starttime="20181119 11:49:05.220"></status>
+<msg timestamp="20181119 15:25:24.645" level="INFO">200</msg>
+<msg timestamp="20181119 15:25:24.646" level="INFO">${result} = 200</msg>
+<status status="PASS" endtime="20181119 15:25:24.646" starttime="20181119 15:25:13.678"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -25,27 +25,141 @@
 <arg>${result}</arg>
 <arg>200</arg>
 </arguments>
-<msg timestamp="20181119 11:49:05.523" level="INFO">Argument types are:
+<msg timestamp="20181119 15:25:24.649" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20181119 11:49:05.523" starttime="20181119 11:49:05.522"></status>
+<status status="PASS" endtime="20181119 15:25:24.649" starttime="20181119 15:25:24.648"></status>
 </kw>
-<status status="PASS" endtime="20181119 11:49:05.523" critical="yes" starttime="20181119 11:49:05.219"></status>
+<status status="PASS" endtime="20181119 15:25:24.650" critical="yes" starttime="20181119 15:25:13.677"></status>
 </test>
-<status status="PASS" endtime="20181119 11:49:05.524" starttime="20181119 11:49:05.174"></status>
+<test id="s1-s1-t3" name="Repeat generate random">
+<kw name="Repeat Keyword" library="BuiltIn">
+<doc>Executes the specified keyword multiple times.</doc>
+<arguments>
+<arg>10</arg>
+<arg>Randomize parameters</arg>
+</arguments>
+<msg timestamp="20181119 15:25:24.652" level="INFO">Repeating keyword, round 1/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.652" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.652" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.653" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.653" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.653" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.653" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.653" level="INFO">4 params are = to 1</msg>
+<status status="PASS" endtime="20181119 15:25:24.654" starttime="20181119 15:25:24.652"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.654" level="INFO">Repeating keyword, round 2/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.655" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.655" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.655" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.655" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.655" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.656" level="INFO">2</msg>
+<status status="PASS" endtime="20181119 15:25:24.656" starttime="20181119 15:25:24.654"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.656" level="INFO">Repeating keyword, round 3/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.657" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.657" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.657" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.657" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.657" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.657" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.658" level="INFO">4 params are = to 1</msg>
+<status status="PASS" endtime="20181119 15:25:24.658" starttime="20181119 15:25:24.656"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.658" level="INFO">Repeating keyword, round 4/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.659" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.659" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.659" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.659" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.659" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.659" level="INFO">2</msg>
+<status status="PASS" endtime="20181119 15:25:24.660" starttime="20181119 15:25:24.658"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.660" level="INFO">Repeating keyword, round 5/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.661" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.661" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.662" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.662" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.662" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.662" level="INFO">2</msg>
+<status status="PASS" endtime="20181119 15:25:24.662" starttime="20181119 15:25:24.660"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.662" level="INFO">Repeating keyword, round 6/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.663" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.663" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.663" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.663" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.663" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.664" level="INFO">1</msg>
+<status status="PASS" endtime="20181119 15:25:24.664" starttime="20181119 15:25:24.663"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.664" level="INFO">Repeating keyword, round 7/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.664" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.665" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.665" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.665" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.665" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.665" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.665" level="INFO">4 params are = to 1</msg>
+<status status="PASS" endtime="20181119 15:25:24.665" starttime="20181119 15:25:24.664"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.666" level="INFO">Repeating keyword, round 8/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.666" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.666" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.667" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.667" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.667" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.667" level="INFO">2</msg>
+<status status="PASS" endtime="20181119 15:25:24.667" starttime="20181119 15:25:24.666"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.667" level="INFO">Repeating keyword, round 9/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.668" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.668" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.668" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.668" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.668" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.669" level="INFO">1</msg>
+<status status="PASS" endtime="20181119 15:25:24.669" starttime="20181119 15:25:24.668"></status>
+</kw>
+<msg timestamp="20181119 15:25:24.669" level="INFO">Repeating keyword, round 10/10.</msg>
+<kw name="Randomize parameters" library="test">
+<msg timestamp="20181119 15:25:24.670" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.670" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.670" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.670" level="INFO">2</msg>
+<msg timestamp="20181119 15:25:24.670" level="INFO">1</msg>
+<msg timestamp="20181119 15:25:24.670" level="INFO">1</msg>
+<status status="PASS" endtime="20181119 15:25:24.671" starttime="20181119 15:25:24.669"></status>
+</kw>
+<status status="PASS" endtime="20181119 15:25:24.671" starttime="20181119 15:25:24.651"></status>
+</kw>
+<status status="PASS" endtime="20181119 15:25:24.671" critical="yes" starttime="20181119 15:25:24.650"></status>
+</test>
+<status status="PASS" endtime="20181119 15:25:24.672" starttime="20181119 15:25:13.629"></status>
 </suite>
-<status status="PASS" endtime="20181119 11:49:05.526" starttime="20181119 11:49:05.152"></status>
+<status status="PASS" endtime="20181119 15:25:24.674" starttime="20181119 15:25:13.610"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Test" pass="2">Test</stat>
-<stat fail="0" id="s1-s1" name="Main" pass="2">Test.Main</stat>
+<stat fail="0" id="s1" name="Test" pass="3">Test</stat>
+<stat fail="0" id="s1-s1" name="Main" pass="3">Test.Main</stat>
 </suite>
 </statistics>
 <errors>

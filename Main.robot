@@ -18,3 +18,8 @@ ${result}  0
 | Make a request to a page then log the status code and assert if it is sucesseful 
 | | ${result}=    | Make request to     ${url}     ${id}
 | | should be equal as strings | ${result}   |   200
+    
+ 
+| Repeat generate random
+| | Repeat Keyword  | 10 | Randomize parameters
+
